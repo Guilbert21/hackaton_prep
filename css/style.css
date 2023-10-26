@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  background: #D48FE3;
+  font-weight: bold;
+  color: #A1EF48;
+}
+
+.secondary-btn {
+  padding: 15px 40px;
+  background: none;
+  border: 2px solid #A1EF48;
+  font-weight: bold;
+  color: rgb(160, 144, 190);
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+/*--------header navbar---------*/
+header {
+  height: 80px;
+  line-height: 80px;
+  padding: 0 20px;
+}
+
+header img {
+  margin: 20px 0;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: #000;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #D48FE3;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header button {
+  padding: 13px 40px;
+}
+
+header .navlinks span {
+  display: none;
+}
+
+@media only screen and (max-width:768px) {
+  header ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 779px;
+    background: #009f7f;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 9;
+  }
+
+  header ul li {
+    display: block;
+  }
+
+  header ul li a {
+    color: #A1EF48;
+  }
+
+  header i {
+    color: #A1EF48;
+  }
+
+  header .navlinks span {
+    color: black;
+    display: block;
+    cursor: pointer;
+    line-height: 77.9px;
+    font-size: 25px;
+  }
+}
+
+/*--------header---------*/
+/*--------home landing---------*/
+.home {
+  height: 779px;
+  color: black;
+}
+
+.home img {
+  width: 100%;
+  height: 779px;
+}
+
+.home .text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.home .text h1 {
+  font-size: 80px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.home p {
+  margin: 20px 0;
+}
+
+.home button {
+  margin-right: 20px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: black;
+}
+
+.owl-nav .owl-prev {
+  left: 0;
+}
+
+.owl-nav .owl-next {
+  right: 0;
+}
+
+/*--------home---------*/
+/*--------book---------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.book {
+  padding: 40px 0;
+  background: #282834;
+  color: #A1EF48;
+}
+
+h1 {
+  font-family: serif;
+}
+
+.book h1 {
+  font-size: 28px;
+}
+
+.book h1 span {
+  color: #D48FE3;
+}
+
+.book input {
+  padding: 20px;
+}
+
+.book input:nth-last-child(1) {
+  background: #D48FE3;
+  color: #A1EF48;
+}
+
+/*--------book---------*/
+/*--------about---------*/
+/* background lettering */
+.left, .right {
+  width: 50%;
+  padding: 30px;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 40px;
+}
+
+.heading h1 {
+  font-size: 100px;
+  font-weight: 500;
+  opacity: 0.1;
+  font-family: serif;
+  position: absolute;
+  top: -30px;
+}
+
+.heading h2 {
+  margin: 30px 0;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.about .heading h1 {
+  top: 55px;
+}
+
+.about {
+  position: relative;
+}
+
+.about .left {
+  margin-top: 30px;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+.about button {
+  margin: 30px 0;
+}
+
+/*--------counter---------*/
+/*--------rooms price details---------*/
+.rooms {
+  position: relative;
+}
+
+.rooms .text {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+  padding: 30px;
+}
+
+.rooms i {
+  font-size: 12px;
+  color: #fbb234;
+  margin: 15px 0;
+  margin-right: 5px;
+}
+
+.rooms p {
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.rooms h3 {
+  font-size: 30px;
+  line-height: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  color: #D48FE3;
+}
+
+.rooms h3 span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+
+.owl-carousel1 .owl-nav .owl-prev,
+.owl-carousel1 .owl-nav .owl-next {
+  position: absolute;
+  top: -20%;
+  height: 50px;
+  width: 50px;
+  background: #D48FE3 !important;
+}
+
+.owl-carousel1 .owl-nav .owl-prev i,
+.owl-carousel1 .owl-nav .owl-next i {
+  color: #A1EF48;
+}
+
+.owl-carousel1 .owl-nav .owl-prev {
+  left: 90%;
+}
+
+.owl-carousel1 .owl-nav .owl-next {
+  right: 0;
+}
+
+/*--------rooms---------*/
+
+/*--------services---------*/
+.services {
+  position: relative;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.services .left {
+  padding: 30px 0;
+}
+
+.services .box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.5s;
+  padding: 20px;
+}
+
+.services .box .text {
+  padding: 30px 0;
+  border: 1px dashed #A1EF48;
+}
+
+.services i {
+  font-size: 50px;
+  color: #D48FE3;
+  transition: 0.5s;
+}
+
+.services h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20p;
+  transition: 0.5s;
+}
+
+.services img {
+  width: 100%;
+  height: 100%;
+}
+
+.services .box:hover {
+  background: #D48FE3;
+  color: #A1EF48;
+  cursor: pointer;
+}
+
+.services .box:hover i,
+.services .box:hover h3 {
+  color: #A1EF48;
+}
+
+/*--------services---------*/
+/*--------news---------*/
+.news {
+  position: relative;
+}
+
+.news i {
+  color: #D48FE3;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.news label {
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.news .left {
+  padding: 30px 0;
+  width: 65%;
+}
+
+.news .right {
+  width: 35%;
+}
+
+.news img {
+  width: 100%;
+}
+
+.news .items p {
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.news .box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 40px 0;
+}
+
+.news .box:nth-child(1) {
+  padding-top: 0;
+}
+
+.news .box:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.news .box img {
+  width: 110px;
+  height: 114px;
+}
+
+.news .stext {
+  padding: 0 0 0 20px;
+}
+
+/*--------news---------*/
+/*--------newsletter---------*/
+.newsletter {
+  position: relative;
+}
+
+.newsletter .container {
+  background: #D48FE3;
+  padding: 40px 30px;
+  position: absolute;
+  top: -70px;
+  left: 8%;
+  width: 100%;
+}
+
+.newsletter h1 {
+  width: 100%;
+  font-size: 30px;
+  color: #A1EF48;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  padding: 20px;
+}
+
+.newsletter input:nth-last-child(2) {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.newsletter input:nth-last-child(1) {
+  margin-left: 20px;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*--------newsletter---------*/
+/*--------footer---------*/
+footer {
+  background: #282834;
+  color: #b6b7b9;
+  padding: 10% 0 5% 0;
+}
+
+footer .grid {
+  grid-template-columns: 6fr 3fr 3fr;
+}
+
+footer p {
+  color: #b6b7b9;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+footer .icon i {
+  margin: 20px 20px 20px 0;
+  color: #b6b7b9;
+}
+
+footer h2 {
+  color: #A1EF48;
+  margin-bottom: 10px;
+}
+
+footer li {
+  margin-bottom: 20px;
+}
+
+footer i {
+  color: #D48FE3;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+footer label {
+  margin: 20px 0;
+}
+
+/*--------footer---------*/
